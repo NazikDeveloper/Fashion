@@ -1,0 +1,181 @@
+@use "../utils/variables";
+.salenow-section {
+  padding: 10px 0 30px 0;
+  @media screen and (min-width: variables.$bp-desktop) {
+    padding: 40px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: variables.$color-seven;
+    gap: 10px;
+    @media screen and (min-width: variables.$bp-tablet) {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 90%;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      max-width: 430px;
+    }
+
+    @media screen and (min-width: variables.$bp-desktop) {
+      max-width: 500px;
+      display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 500 / 550;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    padding-right: 0;
+    padding: 0 5px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 90%;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-left: 0;
+      width: 52%;
+    }
+  }
+
+  &__title {
+    display: none;
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 62px;
+      display: block;
+      line-height: 1;
+      font-weight: 800;
+    }
+    @media screen and (min-width: variables.$bp-desktop) {
+      font-size: 92px;
+    }
+  }
+
+  &__rectangle-three {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -5px;
+      width: calc(100% + 15px);
+      height: 90%;
+      background-color: variables.$color-fife;
+      z-index: -1;
+      transform: rotate(-2deg);
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    color: variables.$color-eight;
+    max-width: 492px;
+    line-height: 1.2;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__date {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: 8px 0 0 0;
+    letter-spacing: -1px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+      letter-spacing: normal;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__terms {
+    font-size: 12px;
+    color: variables.$color-one;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: variables.$bp-tablet) {
+      display: block;
+    }
+  }
+}
+
+.salenow-section .btn-shop-now {
+  width: 85px;
+  height: 35px;
+  font-size: 12px;
+  @media screen and (min-width: variables.$bp-mobile) {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: variables.$bp-tablet) {
+    width: 125px;
+    height: 55px;
+  }
+}
+
+
+
+
+
+
+
+// &__img {
+//   width: 100%;
+//   height: auto;
+
+//   @media screen and (min-width: variables.$bp-mobile) {
+//     width: 90%;
+//   }
+
+//   @media screen and (min-width: variables.$bp-tablet) {
+//     max-width: 430px;
+//   }
+
+//   @media screen and (min-width: variables.$bp-desktop) {
+//     max-width: 500px;
+//   }
+// }

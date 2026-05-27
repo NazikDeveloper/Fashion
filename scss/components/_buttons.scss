@@ -1,0 +1,115 @@
+@use "../utils/variables";
+.btn-sign-up {
+  flex-shrink: 0;
+  width: 100px;
+  height: 45px;
+  font-size: 14px;
+  color: variables.$color-twelve;
+  background-color: variables.$color-one;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: 0 0 0px 5px variables.$color-two;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-one);
+    outline-offset: 3px;
+  }
+}
+
+.btn-shop-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 55px;
+  font-size: 16px;
+  color: variables.$color-twelve;
+  background-color: variables.$color-one;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: 0 0 0px 5px variables.$color-two;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-one);
+    outline-offset: 3px;
+  }
+}
+
+.btn-explore-now {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: variables.$color-fife;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-one);
+    outline-offset: 3px;
+  }
+}
+
+.btn-send {
+  width: 90px;
+  height: 40px;
+  font-size: 14px;
+  color: variables.$color-twelve;
+  background-color: variables.$color-one;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  // position: absolute;
+  // right: 5px;
+  // top: 50%;
+  // transform: translateY(-50%);
+  transition: all 0.3s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: variables.$color-ten;
+      color: variables.$color-one;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-one);
+    outline-offset: 3px;
+  }
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+@use "../utils/variables";
+.brands-section {
+  background-color: variables.$color-fife;
+  padding: 15px 0;
+  @media screen and (min-width: variables.$bp-mobile) {
+    padding: 25px 0;
+  }
+
+  &__block {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: variables.$bp-desktop) {
+      gap: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    transition:
+      transform 150ms ease,
+      color 150ms ease;
+    &:active {
+      transform: scale(0.97);
+    }
+    &:focus-visible {
+      outline: 2px solid variables.$color-one;
+      outline-offset: 3px;
+    }
+  }
+
+  &__img {
+    height: 26px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      height: 56px;
+      width: auto;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        box-shadow: 0 0 0px 5px variables.$color-two;
+      }
+
+      &--accent {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}

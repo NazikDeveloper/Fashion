@@ -1,0 +1,90 @@
+@use "../utils/variables";
+.download-section {
+  padding: 50px 0;
+  @media screen and (min-width: variables.$bp-mobile) {
+    padding: 70px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    @media screen and (min-width: variables.$bp-tablet) {
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  &__block {
+    max-width: 508px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 800;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 38px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 46px;
+      font-weight: 900;
+    }
+  }
+
+  &__subtitle {
+    color: variables.$color-nine;
+    margin: 5px 0 15px 0;
+    line-height: 1.45;
+    font-size: 15px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 18px;
+      margin: 20px 0 30px 0;
+    }
+  }
+  &__app-store,
+  &__google-play {
+    width: 108px;
+    height: 35px;
+    border-radius: 8px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 140px;
+      height: 49px;
+      border-radius: 5px;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        box-shadow: 0 10px 20px 0 variables.$color-two;
+      }
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-one);
+      outline-offset: 3px;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: auto;
+    display: none;
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      max-width: 400px;
+      display: block;
+    }
+
+    @media screen and (min-width: variables.$bp-desktop) {
+      max-width: 500px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

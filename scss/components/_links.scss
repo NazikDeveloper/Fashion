@@ -1,0 +1,30 @@
+@use "../utils/variables";
+.link-explore-now {
+  font-size: 16px;
+  color: variables.$color-two;
+  line-height: 1.45;
+}
+
+.terms-link {
+  font-size: 16px;
+  color: variables.$color-ten;
+  transition: color 0.3s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: variables.$color-fife;
+    }
+  }
+}
+
+.privacy-link {
+  font-size: 16px;
+  color: variables.$color-ten;
+  transition: color 0.3s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: variables.$color-fife;
+    }
+  }
+}

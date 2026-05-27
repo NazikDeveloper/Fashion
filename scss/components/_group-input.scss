@@ -1,0 +1,39 @@
+@use "../utils/variables";
+.group {
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+
+  &__email {
+    padding: 18px 105px 18px 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 10px;
+
+    &::placeholder {
+      font-size: 14px;
+      color: variables.$color-nine;
+    }
+    &:focus::placeholder {
+      color: variables.$color-one;
+    }
+
+    &--email-line {
+      padding: 12px 105px 12px 15px;
+
+      @media screen and (min-width: variables.$bp-mobile) {
+        padding: 18px 105px 18px 15px;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        color: variables.$color-nine;
+      }
+      &:focus::placeholder {
+        color: variables.$color-one;
+      }
+    }
+  }
+}

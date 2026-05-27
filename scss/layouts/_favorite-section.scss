@@ -1,0 +1,120 @@
+@use "../utils/variables";
+.favorite-section {
+  padding: 20px 0 15px 0;
+
+  @media screen and (min-width: variables.$bp-tablet) {
+    padding: 70px 0;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 38px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 46px;
+      font-weight: 900;
+    }
+  }
+
+  &__title-accent {
+    padding-right: 26px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      padding-right: 18px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding-right: 12px;
+    }
+  }
+
+  &__vector {
+    width: 120px;
+    height: 14px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 146px;
+      height: 24px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      width: 166px;
+      height: 34px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  &__iteam {
+    width: 100%;
+    @media screen and (min-width: variables.$bp-tablet) {
+      flex: 0 0 calc((100% - 20px) / 2);
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 610 / 575;
+  }
+
+  &__card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: variables.$color-six;
+    margin: 10px 0 10px 0;
+    line-height: 1.45;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: variables.$bp-desktop) {
+      font-size: 20px;
+    }
+  }
+}
+
+.favorite-section {
+  .link-explore-now {
+    font-size: 13px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+  }
+}
+
+.favorite-section {
+  .btn-explore-now {
+    padding-right: 30px;
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding-right: 30px;
+    }
+  }
+}

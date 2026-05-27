@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a class="header__logo-box" href="/">
+            <svg class="header__logo" width="32" height="28" aria-hidden="true">
+              <use href="./image/icons.svg#icon-header"></use>
+            </svg>
+            <span class="header__logo-text">Fashion</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a class="header__link" href="#catalogue">CATALOGUE</a></li>
+              <li><a class="header__link" href="#fashion">FASHION</a></li>
+              <li><a class="header__link" href="#favorit">FAVOURITE</a></li>
+              <li><a class="header__link" href="#lifestyle">LIFESTYLE</a></li>
+            </ul>
+          </nav>
+
+          <button
+            class="header__burger"
+            type="button"
+            data-toggle=".mobile-menu"
+          >
+            <svg class="header__burger-icon" width="26" height="26">
+              <use href="./image/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <button class="btn-sign-up header__btn-sign-up" type="button">
+            SIGN UP
+          </button>
+          <div class="mobile-menu">
+            <button
+              class="btn-close mobile-menu__btn-close"
+              type="button"
+              data-toggle=".mobile-menu"
+            >
+              <svg class="mobile-menu__close-icon" width="15" height="15">
+                <use href="./image/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo-box" href="/">
+              <svg
+                class="mobile-menu__logo"
+                width="30"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./image/icons.svg#icon-header"></use>
+              </svg>
+              <span class="mobile-menu__logo-text">Fashion</span>
+            </a>
+
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__menu">
+                <li><a class="mobile-menu__link" href="#catalogue">CATALOGUE</a></li>
+                <li><a class="mobile-menu__link" href="#fashion">FASHION</a></li>
+                <li><a class="mobile-menu__link" href="#favorit">FAVOURITE</a></li>
+                <li><a class="mobile-menu__link" href="#lifestyle">LIFESTYLE</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- мобільне меню -->
+          <!-- мобільне меню -->
+          <!-- мобільне меню -->
+          <!-- мобільне меню -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <div class="hero-section__info-box">
+              <h1 class="hero-section__title">
+                <span class="hero-section__rectangle-one">LET’S</span> EXPLORE
+                <span class="hero-section__rectangle-two">UNIQUE</span> CLOTHES.
+              </h1>
+              <p class="hero-section__subtitle">
+                Live for Influential and Innovative fashion!
+              </p>
+              <a class="btn-shop-now" href="#">SHOP NOW</a>
+            </div>
+            <picture class="hero-section__image-wrapper">
+              <source
+                srcset="./image/hero-img.avif 1x, ./image/hero-img@2x.avif 2x"
+                type="image/avif"
+              />
+
+              <source
+                srcset="./image/hero-img.webp 1x, ./image/hero-img@2x.webp 2x"
+                type="image/webp"
+              />
+
+              <img
+                src="./image/hero-img.png"
+                alt="happy girl"
+                width="600"
+                height="600"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section brands-section" id="catalogue">
+        <div class="container">
+          <h2 class="visually-hidden">Brands</h2>
+          <div class="brands-section__block">
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website H&M"
+            >
+              <img
+                class="brands-section__img"
+                width="118"
+                height="68"
+                srcset="./image/hm.webp 1x, ./image/hm@2x.webp 2x"
+                src="./image/hm.webp"
+                loading="lazy"
+                alt="logo brand H&M"
+              />
+            </a>
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website obey"
+            >
+              <img
+                class="brands-section__img"
+                width="150"
+                height="52"
+                srcset="./image/obey.webp 1x, ./image/obey@2x.webp 2x"
+                src="./image/obey.webp"
+                loading="lazy"
+                alt="logo brand obey"
+              />
+            </a>
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website shopify"
+            >
+              <img
+                class="brands-section__img"
+                width="172"
+                height="68"
+                srcset="./image/shopify.webp 1x, ./image/shopify@2x.webp 2x"
+                src="./image/shopify.webp"
+                loading="lazy"
+                alt="logo brand shopify"
+              />
+            </a>
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website lacoste"
+            >
+              <img
+                class="brands-section__img brands-section__img--accent"
+                width="235"
+                height="69"
+                srcset="./image/lacoste.webp 1x, ./image/lacoste@2x.webp 2x"
+                src="./image/lacoste.webp"
+                loading="lazy"
+                alt="logo brand lacoste"
+              />
+            </a>
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website levis"
+            >
+              <img
+                class="brands-section__img"
+                width="127"
+                height="70"
+                srcset="./image/levis.webp 1x, ./image/levis@2x.webp 2x"
+                src="./image/levis.webp"
+                loading="lazy"
+                alt="logo brand levis"
+              />
+            </a>
+            <a
+              class="brands-section__link"
+              href="#"
+              aria-label="go to website amazon"
+            >
+              <img
+                class="brands-section__img"
+                width="166"
+                height="63"
+                srcset="./image/amazon.webp 1x, ./image/amazon@2x.webp 2x"
+                src="./image/amazon.webp"
+                loading="lazy"
+                alt="logo brand amazon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section arrivals-section" id="fashion">
+        <div class="container">
+          <h2 class="arrivals-section__title section__title">
+            NEW
+            <span class="title-accent arrivals-section__title-accent"
+              >ARRIVALS
+              <svg
+                class="title-accent__vector arrivals-section__vector"
+                width="166"
+                height="34"
+              >
+                <use href="./image/icons.svg#vector-arrival"></use>
+              </svg>
+            </span>
+          </h2>
+          <div
+            class="swiper mySwiper arrivals-section__container swiper-hidden"
+          >
+            <ul class="arrivals-section__list swiper-wrapper">
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/hoodies.webp 1x, ./image/hoodies@2x.webp 2x"
+                    src="./image/hoodies.webp"
+                    alt="Hoodies & Sweatshirt"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">
+                    Hoodies & Sweatshirt
+                  </h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/coats.webp 1x, ./image/coats@2x.webp 2x"
+                    src="./image/coats.webp"
+                    alt="Coats & Parkas"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Coats & Parkas</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/tees.webp 1x, ./image/tees@2x.webp 2x"
+                    src="./image/tees.webp"
+                    alt="Tees & T-Shirts"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Tees & T-Shirts</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/tees.webp 1x, ./image/tees@2x.webp 2x"
+                    src="./image/tees.webp"
+                    alt="Tees & T-Shirts"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Tees & T-Shirts</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="18" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/hoodies.webp 1x, ./image/hoodies@2x.webp 2x"
+                    src="./image/hoodies.webp"
+                    alt="Hoodies & Sweatshirt"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">
+                    Hoodies & Sweatshirt
+                  </h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/coats.webp 1x, ./image/coats@2x.webp 2x"
+                    src="./image/coats.webp"
+                    alt="Coats & Parkas"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Coats & Parkas</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/tees.webp 1x, ./image/tees@2x.webp 2x"
+                    src="./image/tees.webp"
+                    alt="Tees & T-Shirts"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Tees & T-Shirts</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="16" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+              <li class="arrivals-section__iteam swiper-slide">
+                <article class="arrivals-section__card">
+                  <img
+                    class="arrivals-section__img"
+                    height="600"
+                    width="484"
+                    srcset="./image/tees.webp 1x, ./image/tees@2x.webp 2x"
+                    src="./image/tees.webp"
+                    alt="Tees & T-Shirts"
+                    loading="lazy"
+                  />
+                  <h3 class="arrivals-section__card-title">Tees & T-Shirts</h3>
+                  <a class="btn-explore-now" href="#">
+                    <span class="link-explore-now">Explore Now!</span>
+                    <svg width="28" height="18" fill="#7f7f7f">
+                      <use href="./image/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section salenow-section" id="lifestyle">
+        <div class="container">
+          <div class="salenow-section__container">
+            <img
+              class="salenow-section__img"
+              srcset="./image/sale-now.webp 1x, ./image/sale-now@2x.webp 2x"
+              src="./image/sale-now.webp"
+              width="500"
+              height="550"
+              alt="sale now"
+              loading="eager"
+            />
+
+            <div class="salenow-section__block">
+              <h2 class="salenow-section__title">
+                <span class="salenow-section__rectangle-three">PAYDAY</span>
+                <br />
+                SALE NOW
+              </h2>
+              <p class="salenow-section__description">
+                Spend minimal $100 get 30% off voucher code for your next
+                purchase
+              </p>
+              <div class="salenow-section__box">
+                <div>
+                  <p class="salenow-section__date">
+                    <time datetime="2021-06-01">1 June</time> —
+                    <time datetime="2021-06-10">10 June 2021</time>
+                  </p>
+                  <small>
+                    <a class="salenow-section__terms" href="#"
+                      >Terms & Conditions apply</a
+                    >
+                  </small>
+                </div>
+                <a class="btn-shop-now" href="#">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section favorite-section" id="favorit">
+        <div class="container">
+          <h2 class="favorite-section__title section__title">
+            Young’s
+            <span class="title-accent favorite-section__title-accent"
+              >Favourite
+              <svg
+                class="title-accent__vector favorite-section__vector"
+                width="166"
+                height="34"
+                fill="#EBD96B"
+              >
+                <use href="./image/icons.svg#vector-arrival"></use>
+              </svg>
+            </span>
+          </h2>
+          <ul class="favorite-section__list">
+            <li class="favorite-section__iteam">
+              <article class="favorite-section__card">
+                <img
+                  class="favorite-section__img"
+                  width="610"
+                  height="575"
+                  srcset="./image/trending.webp 1x, ./image/trending@2x.webp 2x"
+                  src="./image/trending.webp"
+                  loading="eager"
+                  alt="Trending on Instagram collection"
+                />
+                <h3 class="favorite-section__card-title">
+                  Trending on Instagram
+                </h3>
+                <a class="btn-explore-now" href="#">
+                  <span class="link-explore-now">Explore Now!</span>
+                  <svg width="38" height="12" fill="#7f7f7f">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
+              </article>
+            </li>
+            <li class="favorite-section__iteam">
+              <article class="favorite-section__card">
+                <img
+                  class="favorite-section__img"
+                  width="610"
+                  height="575"
+                  srcset="
+                    ./image/all-under.webp    1x,
+                    ./image/all-under@2x.webp 2x
+                  "
+                  src="./image/all-under.webp"
+                  loading="eager"
+                  alt="All clothing items under 40 dollars"
+                />
+                <h3 class="favorite-section__card-title">All Under $40</h3>
+                <a class="btn-explore-now" href="#">
+                  <span class="link-explore-now">Explore Now!</span>
+                  <svg width="38" height="12" fill="#7f7f7f">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section download-section">
+        <div class="container">
+          <div class="download-section__container">
+            <div class="download-section__block">
+              <h2 class="download-section__title section__title">
+                DOWNLOAD APP & GET THE VOUCHER!
+              </h2>
+              <p class="download-section__subtitle">
+                Get 30% off for first transaction using Rondovision mobile app
+                for now.
+              </p>
+              <a href="#">
+                <img
+                  class="download-section__app-store"
+                  width="140"
+                  height="49"
+                  srcset="
+                    ./image/app-store.webp    1x,
+                    ./image/app-store@2x.webp 2x
+                  "
+                  src="./image/app-store.webp"
+                  alt="download on the App Store"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#">
+                <img
+                class="download-section__google-play"
+
+                  width="140"
+                  height="49"
+                  srcset="
+                    ./image/google-play.webp    1x,
+                    ./image/google-play@2x.webp 2x
+                  "
+                  src="./image/google-play.webp"
+                  alt="download on the google play"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <img
+              class="download-section__img"
+              width="500"
+              height="401"
+              srcset="./image/mobile-app.webp 1x, ./image/mobile-app@2x.webp 2x"
+              src="./image/mobile-app.webp"
+              alt="download on the google play"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section community-section">
+        <div class="container">
+          <div class="community-section__container">
+            <h2 class="section__title community-section__title">
+              JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+            </h2>
+            <p class="community-section__subtitle">
+              Type your email down below and be young wild generation
+            </p>
+            <form class="community-section__form" name="community-form">
+              <div class="group">
+                <label class="group__label visually-hidden" for="user-email"
+                  >Email</label
+                >
+                <input
+                  class="group__email group__email--email-line"
+                  type="email"
+                  id="user-email"
+                  placeholder="Add your email here"
+                  required
+                />
+                <button class="btn-send" type="submit">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__logo-container">
+            <a class="footer__logo" href="/">FASHION</a>
+            <p class="footer__logo-text">
+              Complete your style with awesome clothes from us.
+            </p>
+            <div class="footer__icon-block">
+              <a class="social-link" href="#">
+                <svg width="42" height="42">
+                  <use href="./image/icons.svg#facebook"></use>
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg width="42" height="42">
+                  <use href="./image/icons.svg#instagram"></use>
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg width="42" height="42">
+                  <use href="./image/icons.svg#twitter"></use>
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg width="42" height="42">
+                  <use href="./image/icons.svg#in"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-container">
+            <nav class="footer__nav">
+              <h3 class="footer__nav-title">Company</h3>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="#">About</a></li>
+                <li><a class="footer__link" href="#">Contact us</a></li>
+                <li><a class="footer__link" href="#">Support</a></li>
+                <li><a class="footer__link" href="#">Careers</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <h3 class="footer__nav-title">Quick Link</h3>
+              <ul class="footer__list">
+                <li><a class="footer__link" href="#">Share Location</a></li>
+                <li><a class="footer__link" href="#">Orders Tracking</a></li>
+                <li><a class="footer__link" href="#">Size Guide</a></li>
+                <li><a class="footer__link" href="#">FAQs</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__nav">
+              <h3 class="footer__nav-title">Legal</h3>
+              <ul class="footer__list">
+                <li><a class="terms-link" href="#">Terms & conditions</a></li>
+                <li><a class="privacy-link" href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/arrivals-slider.js" defer></script>
+    <script src="./js/mobile-menu.js" defer></script>
+  </body>
+</html>
+

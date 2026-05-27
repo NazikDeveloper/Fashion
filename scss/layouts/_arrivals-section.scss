@@ -1,0 +1,157 @@
+@use "../utils/variables";
+
+.arrivals-section {
+    padding: 30px 0 15px 0;
+  @media screen and (min-width: variables.$bp-mobile) {
+    padding: 70px 0;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 38px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 46px;
+      font-weight: 900;
+    }
+  }
+
+  &__title-accent {
+    padding-right: 26px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      padding-right: 18px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding-right: 12px;
+    }
+  }
+
+  &__vector {
+    width: 116px;
+    height: 14px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 146px;
+      height: 24px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      width: 166px;
+      height: 34px;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__iteam {
+    height: auto;
+  }
+
+  &__card {
+    height: auto;
+  }
+
+  &__img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__card-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: variables.$color-six;
+    margin-top: 10px;
+    line-height: 1.45;
+    letter-spacing: -1px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: variables.$bp-desktop) {
+      font-size: 20px;
+    }
+  }
+}
+
+.arrivals-section {
+  .link-explore-now {
+    font-size: 11px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 16px;
+    }
+  }
+}
+
+.arrivals-section {
+  .btn-explore-now {
+    padding-right: 10px;
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding-right: 30px;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-hidden {
+  opacity: 0;
+}
+
+.swiper-ready {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+  @media screen and (min-width: variables.$bp-desktop) {
+    display: block;
+    color: variables.$color-two;
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: variables.$color-fife;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$color-two;
+}

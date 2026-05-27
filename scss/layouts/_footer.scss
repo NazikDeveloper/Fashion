@@ -1,0 +1,154 @@
+@use "../utils/variables";
+.footer {
+  padding: 60px 0 50px 0;
+  background-color: variables.$color-one;
+  @media screen and (min-width: variables.$bp-tablet) {
+    padding: 100px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: variables.$bp-footer) {
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    color: variables.$color-four;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &__logo-text {
+    color: variables.$color-ten;
+    font-size: 14px;
+    max-width: 260px;
+    margin: 15px 0;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    margin: 20px 0;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__icon-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
+
+  &__nav-title {
+    color: variables.$color-eleven;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.45;
+    padding: 0 5px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: variables.$bp-footer) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 2.5px;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: variables.$color-ten;
+    transition: color 0.3s ease;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 15px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 16px;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: variables.$color-fife;
+      }
+    }
+  }
+}
+
+.footer .social-link {
+  width: 32px;
+  height: 32px;
+  @media screen and (min-width: variables.$bp-mobile) {
+    width: 36px;
+    height: 36px;
+  }
+  @media screen and (min-width: variables.$bp-tablet) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.footer .terms-link {
+  font-size: 14px;
+  @media screen and (min-width: variables.$bp-mobile) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: variables.$bp-tablet) {
+    font-size: 16px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: variables.$color-fife;
+    }
+  }
+}
+
+.footer .privacy-link {
+  font-size: 14px;
+
+  @media screen and (min-width: variables.$bp-mobile) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: variables.$bp-tablet) {
+    font-size: 16px;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: variables.$color-fife;
+    }
+  }
+}
