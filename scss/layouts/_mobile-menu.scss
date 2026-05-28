@@ -5,10 +5,14 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
   background-color: variables.$color-fife;
   transform: translateX(100%);
   transition: transform 0.3s;
   z-index: 1000;
+  padding: 20px 24px;
+  gap: 24px;
 
   &.is-open {
     transform: translateX(0);
@@ -22,12 +26,6 @@
   }
   &__close-icon {
     color: variables.$color-one;
-  }
-
-  &__logo-box {
-    position: absolute;
-    left: 24px;
-    top: 20px;
   }
 
   &__logo {
@@ -58,10 +56,29 @@
     }
   }
 
-  &__nav {
-    position: absolute;
-    top: 70px;
-    left: 28px;
+  &__btn-sign-up {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: variables.$color-one;
+    color: variables.$color-fife;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:active {
+      transform: scale(0.97);
+    }
+
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 18px;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   &__link {
@@ -73,3 +90,5 @@
     }
   }
 }
+
+

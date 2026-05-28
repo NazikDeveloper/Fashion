@@ -1,28 +1,32 @@
+const toggleButtons = document.querySelectorAll("[data-toggle]");
 
-const toggleButtons = document.querySelectorAll('[data-toggle]');
-
-toggleButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Отримуємо значення селектора (наприклад, "#modal-login" або ".mobile-menu")
-    const targetSelector = button.getAttribute('data-toggle');
-    // Знаходимо цей елемент на сторінці
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetSelector = button.getAttribute("data-toggle");
     const targetElement = document.querySelector(targetSelector);
 
+    // Якщо кнопка знаходиться всередині mobile-menu
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    if (button.dataset.closeMenu === "true") {
+      mobileMenu.classList.remove("is-open");
+    }
+
     if (targetElement) {
-      // Якщо це мобільне меню — перемикаємо 'is-open', для інших — 'is-hidden'
-      if (targetElement.classList.contains('mobile-menu')) {
-        targetElement.classList.toggle('is-open');
+      if (targetElement.classList.contains("mobile-menu")) {
+        targetElement.classList.toggle("is-open");
       } else {
-        targetElement.classList.toggle('is-hidden');
+        targetElement.classList.toggle("is-hidden");
       }
     }
   });
 });
 
 // Закриття меню при кліку на посилання
-const mobileLinks = document.querySelectorAll('.mobile-menu__link');
-mobileLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.mobile-menu').classList.remove('is-open');
+const mobileLinks = document.querySelectorAll(".mobile-menu__link");
+
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelector(".mobile-menu").classList.remove("is-open");
   });
 });

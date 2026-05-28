@@ -38,9 +38,16 @@
               <use href="./image/icons.svg#menu-burger"></use>
             </svg>
           </button>
-          <button class="btn-sign-up header__btn-sign-up" type="button">
+          <button
+            class="btn-sign-up header__btn-sign-up"
+            type="button"
+            data-toggle=".backdrop"
+          >
             SIGN UP
           </button>
+
+
+          
           <div class="mobile-menu">
             <button
               class="btn-close mobile-menu__btn-close"
@@ -63,12 +70,29 @@
               <span class="mobile-menu__logo-text">Fashion</span>
             </a>
 
+            <button
+              class="mobile-menu__btn-sign-up"
+              type="button"
+              data-toggle=".backdrop"
+              data-close-menu="true"
+            >
+              Sign Up
+            </button>
+
             <nav class="mobile-menu__nav">
               <ul class="mobile-menu__menu">
-                <li><a class="mobile-menu__link" href="#catalogue">CATALOGUE</a></li>
-                <li><a class="mobile-menu__link" href="#fashion">FASHION</a></li>
-                <li><a class="mobile-menu__link" href="#favorit">FAVOURITE</a></li>
-                <li><a class="mobile-menu__link" href="#lifestyle">LIFESTYLE</a></li>
+                <li>
+                  <a class="mobile-menu__link" href="#catalogue">CATALOGUE</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#fashion">FASHION</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#favorit">FAVOURITE</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#lifestyle">LIFESTYLE</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -536,8 +560,7 @@
               </a>
               <a href="#">
                 <img
-                class="download-section__google-play"
-
+                  class="download-section__google-play"
                   width="140"
                   height="49"
                   srcset="
@@ -652,6 +675,53 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button
+          class="btn-close modal__btn-close"
+          type="button"
+          data-toggle=".backdrop"
+        >
+          <svg width="15" height="15">
+            <use href="./image/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Sign Up</h2>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__container">
+            <label class="modal__lable" for="sing-up-email"
+              >Email or phone</label
+            >
+            <input
+              class="modal__input"
+              type="text"
+              id="sing-up-email"
+              name="sing-up-email"
+              minlength="3"
+              maxlength="20"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+            <span class="modal__text"
+              >Наприклад: my@email.com або 380XXXXXXXXX / 48XXXXXXXXX</span
+            >
+            <label class="modal__lable" for="sing-up-password">Password</label>
+            <input
+              class="modal__input"
+              type="password"
+              id="sing-up-password"
+              name="sing-up-password"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </div>
+          <button class="modal__sing-up-btn sing-up-btn" type="submit">
+            Sing Up
+          </button>
+        </form>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
       defer
@@ -660,4 +730,3 @@
     <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
-
