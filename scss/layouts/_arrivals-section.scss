@@ -147,9 +147,17 @@
   }
 }
 
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
 .swiper-pagination-bullet {
   background-color: variables.$color-fife;
   opacity: 1;
+  width: 7px;
+  height: 7px;
 }
 
 .swiper-pagination-bullet-active {
