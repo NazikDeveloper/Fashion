@@ -9,9 +9,15 @@
   &__block {
     display: flex;
     gap: 5px;
+    // justify-content: space-between;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    // padding: 0 5px;
+    // @media screen and (min-width: variables.$bp-mobile) {
+    //   justify-content: space-around;
+    // padding: 0;
+    //   }
     @media screen and (min-width: variables.$bp-desktop) {
       gap: 0;
     }
@@ -32,12 +38,16 @@
   }
 
   &__img {
-    height: 26px;
+    height: 33px;
     width: auto;
     object-fit: contain;
     transition: all 0.3s ease;
 
     @media screen and (min-width: variables.$bp-mobile) {
+      height: 46px;
+      width: auto;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
       height: 56px;
       width: auto;
     }
